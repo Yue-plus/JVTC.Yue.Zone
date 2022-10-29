@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>悦域九职 Blog</title>
         <link>https://JVTC.Yue.Zone/blog</link>
         <description>悦域九职 Blog</description>
-        <lastBuildDate>Tue, 11 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[安装配置 Eclipse]]></title>
+            <link>https://JVTC.Yue.Zone/blog/2022/10/13/setupEclipse</link>
+            <guid>/2022/10/13/setupEclipse</guid>
+            <pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[前往 官方网站 下载并安装。]]></description>
+            <content:encoded><![CDATA[<p>前往 <a href="https://www.eclipse.org/" target="_blank" rel="noopener noreferrer">官方网站</a> 下载并安装。</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Hi]]></title>
             <link>https://JVTC.Yue.Zone/blog/2022/10/11/Hi</link>
