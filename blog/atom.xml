@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://JVTC.Yue.Zone/blog</id>
     <title>悦域九职 Blog</title>
-    <updated>2022-10-13T00:00:00.000Z</updated>
+    <updated>2023-01-06T18:16:09.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://JVTC.Yue.Zone/blog"/>
     <subtitle>悦域九职 Blog</subtitle>
     <icon>https://JVTC.Yue.Zone/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[配置 Windows11]]></title>
+        <id>/configWin11</id>
+        <link href="https://JVTC.Yue.Zone/blog/configWin11"/>
+        <updated>2023-01-06T18:16:09.000Z</updated>
+        <summary type="html"><![CDATA[使用 StartAllBack]]></summary>
+        <content type="html"><![CDATA[<p>使用 <a href="https://www.startallback.com/" target="_blank" rel="noopener noreferrer">StartAllBack</a></p>]]></content>
+        <author>
+            <name>Yue_plus</name>
+            <email>Yue_plus@foxmail.com</email>
+            <uri>https://github.com/Yue-plus</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[安装配置 Eclipse]]></title>
         <id>/2022/10/13/setupEclipse/README</id>

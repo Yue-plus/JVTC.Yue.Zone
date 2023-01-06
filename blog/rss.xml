@@ -4,10 +4,19 @@
         <title>悦域九职 Blog</title>
         <link>https://JVTC.Yue.Zone/blog</link>
         <description>悦域九职 Blog</description>
-        <lastBuildDate>Thu, 13 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jan 2023 18:16:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[配置 Windows11]]></title>
+            <link>https://JVTC.Yue.Zone/blog/configWin11</link>
+            <guid>/configWin11</guid>
+            <pubDate>Fri, 06 Jan 2023 18:16:09 GMT</pubDate>
+            <description><![CDATA[使用 StartAllBack]]></description>
+            <content:encoded><![CDATA[<p>使用 <a href="https://www.startallback.com/" target="_blank" rel="noopener noreferrer">StartAllBack</a></p>]]></content:encoded>
+            <author>Yue_plus@foxmail.com (Yue_plus)</author>
+        </item>
         <item>
             <title><![CDATA[安装配置 Eclipse]]></title>
             <link>https://JVTC.Yue.Zone/blog/2022/10/13/setupEclipse/README</link>
