@@ -1,0 +1,58 @@
+{
+    "short_name": "悦域九职",
+    "name": "JVTC.Yue.Zone",
+    "icons": [
+      {
+        "src": "/img/班徽.svg",
+        "type": "image/svg+xml",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/images/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#0040BF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#0040BF",
+    "shortcuts": [
+      {
+        "name": "How's weather today?",
+        "short_name": "Today",
+        "description": "View weather information for today",
+        "url": "/today?source=pwa",
+        "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "How's weather tomorrow?",
+        "short_name": "Tomorrow",
+        "description": "View weather information for tomorrow",
+        "url": "/tomorrow?source=pwa",
+        "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "本站点用于展示作品、作业、笔记，欢迎同学们共同参与~",
+    "screenshots": [
+      {
+        "src": "/images/screenshot1.png",
+        "type": "image/png",
+        "sizes": "540x720",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/images/screenshot2.jpg",
+        "type": "image/jpg",
+        "sizes": "720x540",
+        "form_factor": "wide"
+      }
+    ]
+  }
