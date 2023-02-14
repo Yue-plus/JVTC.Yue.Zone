@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://JVTC.Yue.Zone/blog</id>
     <title>悦域九职 Blog</title>
-    <updated>2023-02-13T12:40:12.000Z</updated>
+    <updated>2023-02-14T12:45:20.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://JVTC.Yue.Zone/blog"/>
     <subtitle>悦域九职 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[配置 Windows11]]></title>
         <id>/configWin11</id>
         <link href="https://JVTC.Yue.Zone/blog/configWin11"/>
-        <updated>2023-02-13T12:40:12.000Z</updated>
+        <updated>2023-02-14T12:45:20.000Z</updated>
         <summary type="html"><![CDATA[使用 StartAllBack]]></summary>
         <content type="html"><![CDATA[<p>使用 <a href="https://www.startallback.com/" target="_blank" rel="noopener noreferrer">StartAllBack</a></p>]]></content>
         <author>
@@ -24,7 +24,7 @@
         <title type="html"><![CDATA[uBlackList]]></title>
         <id>/uBlackList</id>
         <link href="https://JVTC.Yue.Zone/blog/uBlackList"/>
-        <updated>2023-02-13T12:40:12.000Z</updated>
+        <updated>2023-02-14T12:45:20.000Z</updated>
         <summary type="html"><![CDATA[| uBlacklist - Chrome 应用商店]]></summary>
         <content type="html"><![CDATA[<p>| <a href="https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe?hl=zh-CN" target="_blank" rel="noopener noreferrer">uBlacklist - Chrome 应用商店</a>
 | <a href="https://addons.mozilla.org/zh-CN/firefox/addon/ublacklist/" target="_blank" rel="noopener noreferrer">uBlacklist – 下载 🦊 Firefox 扩展（zh-CN）</a>
@@ -40,9 +40,17 @@
         <title type="html"><![CDATA[去你妈了个逼的 Notepad++ ！]]></title>
         <id>/QNMLGBDnotepad++/README</id>
         <link href="https://JVTC.Yue.Zone/blog/QNMLGBDnotepad++/README"/>
-        <updated>2023-02-13T12:40:12.000Z</updated>
+        <updated>2023-02-14T12:45:20.000Z</updated>
         <content type="html"><![CDATA[<p><a href="https://twitter.com/Notepad_plus/status/1618276938342359042" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="/assets/images/QQ图片20230128000511-00c6a71403fd8904ffb2da1198634666.jpg" width="864" height="1920" class="img_ev3q"></a>
 <a href="https://twitter.com/Notepad_plus/status/1618785299232075779" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="/assets/images/QQ图片20230128000422-a6d471e8416de1297a1448660a6fd6fc.jpg" width="864" height="1920" class="img_ev3q"></a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 卸载 MySQL]]></title>
+        <id>/2023/02/14/removeMySQL</id>
+        <link href="https://JVTC.Yue.Zone/blog/2023/02/14/removeMySQL"/>
+        <updated>2023-02-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[01. 在控制面版中删除。]]></summary>
+        <content type="html"><![CDATA[<ol><li><p>在控制面版中删除。</p></li><li><p>检查目录：</p><ul><li><code>C:\Program Files\MySQL</code></li><li><code>C:\Program Files (x86)\MySQL</code></li><li><code>C:\ProgramData\MySQL</code></li></ul></li><li><p>删除服务：</p><div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sc delect MYSQL80</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></li></ol>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[V2ray]]></title>
