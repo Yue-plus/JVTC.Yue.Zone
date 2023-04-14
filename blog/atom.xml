@@ -2,24 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://JVTC.Yue.Zone/blog</id>
     <title>悦域九职 Blog</title>
-    <updated>2023-04-14T00:00:00.000Z</updated>
+    <updated>2023-04-14T09:23:22.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://JVTC.Yue.Zone/blog"/>
     <subtitle>悦域九职 Blog</subtitle>
     <icon>https://JVTC.Yue.Zone/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[在 Jetson Nano 上运行 Yolov5]]></title>
-        <id>https://JVTC.Yue.Zone/blog/2023/04/14/jetsonNanoYolov5</id>
-        <link href="https://JVTC.Yue.Zone/blog/2023/04/14/jetsonNanoYolov5"/>
-        <updated>2023-04-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[链接]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="链接">链接<a href="#链接" class="hash-link" aria-label="链接的直接链接" title="链接的直接链接">​</a></h2><ul><li><p><a href="https://developer.nvidia.com/embedded/downloads#?tx=$product,jetson_nano" target="_blank" rel="noopener noreferrer">Jetson Download Center | NVIDIA Developer</a></p></li><li><p><a href="https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md" target="_blank" rel="noopener noreferrer">yolov5/README.zh-CN.md at master · ultralytics/yolov5</a></p></li><li><p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu-ports/" target="_blank" rel="noopener noreferrer">ubuntu-ports | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p></li><li><p><a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank" rel="noopener noreferrer">Miniconda — conda documentation</a></p></li><li><p><a href="https://developer.aliyun.com/article/879285" target="_blank" rel="noopener noreferrer">YOLOv5-GPU Jetson Nano 部署教程-阿里云开发者社区</a></p></li><li><p><a href="https://www.circuspi.com/index.php/2022/08/19/recomputer-yolov5-installation-testing/" target="_blank" rel="noopener noreferrer">reComputer Jetson 運行 YOLOv5 教學全攻略 1 – 安裝與測試 – CIRCUS Pi</a></p></li><li><p><a href="https://www.circuspi.com/index.php/2022/08/25/recomputer-jetson-yolov5-tensorrt/" target="_blank" rel="noopener noreferrer">reComputer Jetson 運行 YOLOv5 教學全攻略 3 – 使用 TensorRT 加速推論 – CIRCUS Pi</a></p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="illegal-instruction-core-dumped">Illegal instruction (core dumped)<a href="#illegal-instruction-core-dumped" class="hash-link" aria-label="Illegal instruction (core dumped)的直接链接" title="Illegal instruction (core dumped)的直接链接">​</a></h2><ul><li><a href="https://github.com/ultralytics/yolov5/issues/10981" target="_blank" rel="noopener noreferrer">Illegal Instruction (Core dumped) Jetson Nano · Issue #10981 · ultralytics/yolov5 · GitHub</a></li><li><a href="https://stackoverflow.com/questions/65631801/illegal-instructioncore-dumped-error-on-jetson-nano" target="_blank" rel="noopener noreferrer">python - Illegal instruction(core dumped) error on Jetson Nano - Stack Overflow</a></li><li><a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped/165488" target="_blank" rel="noopener noreferrer">Illegal instruction (core dumped) - Jetson &amp; Embedded Systems / Jetson TX2 - NVIDIA Developer Forums</a></li></ul>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[配置 Windows11]]></title>
         <id>https://JVTC.Yue.Zone/blog/configWin11</id>
         <link href="https://JVTC.Yue.Zone/blog/configWin11"/>
-        <updated>2023-04-13T19:41:45.000Z</updated>
+        <updated>2023-04-14T09:23:22.000Z</updated>
         <summary type="html"><![CDATA[使用 StartAllBack]]></summary>
         <content type="html"><![CDATA[<p>使用 <a href="https://www.startallback.com/" target="_blank" rel="noopener noreferrer">StartAllBack</a></p>]]></content>
         <author>
@@ -32,7 +24,7 @@
         <title type="html"><![CDATA[uBlackList]]></title>
         <id>https://JVTC.Yue.Zone/blog/uBlackList</id>
         <link href="https://JVTC.Yue.Zone/blog/uBlackList"/>
-        <updated>2023-04-13T19:41:45.000Z</updated>
+        <updated>2023-04-14T09:23:22.000Z</updated>
         <summary type="html"><![CDATA[| uBlacklist - Chrome 应用商店]]></summary>
         <content type="html"><![CDATA[<p>| <a href="https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe?hl=zh-CN" target="_blank" rel="noopener noreferrer">uBlacklist - Chrome 应用商店</a>
 | <a href="https://addons.mozilla.org/zh-CN/firefox/addon/ublacklist/" target="_blank" rel="noopener noreferrer">uBlacklist – 下载 🦊 Firefox 扩展（zh-CN）</a>
@@ -48,9 +40,17 @@
         <title type="html"><![CDATA[去你妈了个逼的 Notepad++ ！]]></title>
         <id>https://JVTC.Yue.Zone/blog/QNMLGBDnotepad++/README</id>
         <link href="https://JVTC.Yue.Zone/blog/QNMLGBDnotepad++/README"/>
-        <updated>2023-04-13T19:41:45.000Z</updated>
+        <updated>2023-04-14T09:23:22.000Z</updated>
         <content type="html"><![CDATA[<p><a href="https://twitter.com/Notepad_plus/status/1618276938342359042" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="/assets/images/QQ图片20230128000511-00c6a71403fd8904ffb2da1198634666.jpg" width="864" height="1920" class="img_ev3q"></a>
 <a href="https://twitter.com/Notepad_plus/status/1618785299232075779" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="/assets/images/QQ图片20230128000422-a6d471e8416de1297a1448660a6fd6fc.jpg" width="864" height="1920" class="img_ev3q"></a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在 Jetson Nano 上运行 Yolov5]]></title>
+        <id>https://JVTC.Yue.Zone/blog/2023/04/14/jetsonNanoYolov5</id>
+        <link href="https://JVTC.Yue.Zone/blog/2023/04/14/jetsonNanoYolov5"/>
+        <updated>2023-04-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[链接]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="链接">链接<a href="#链接" class="hash-link" aria-label="链接的直接链接" title="链接的直接链接">​</a></h2><ul><li><p><a href="https://developer.nvidia.com/embedded/downloads#?tx=$product,jetson_nano" target="_blank" rel="noopener noreferrer">Jetson Download Center | NVIDIA Developer</a></p></li><li><p><a href="https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md" target="_blank" rel="noopener noreferrer">yolov5/README.zh-CN.md at master · ultralytics/yolov5</a></p></li><li><p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu-ports/" target="_blank" rel="noopener noreferrer">ubuntu-ports | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p></li><li><p><a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank" rel="noopener noreferrer">Miniconda — conda documentation</a></p></li><li><p><a href="https://developer.aliyun.com/article/879285" target="_blank" rel="noopener noreferrer">YOLOv5-GPU Jetson Nano 部署教程-阿里云开发者社区</a></p></li><li><p><a href="https://www.circuspi.com/index.php/2022/08/19/recomputer-yolov5-installation-testing/" target="_blank" rel="noopener noreferrer">reComputer Jetson 運行 YOLOv5 教學全攻略 1 – 安裝與測試 – CIRCUS Pi</a></p></li><li><p><a href="https://www.circuspi.com/index.php/2022/08/25/recomputer-jetson-yolov5-tensorrt/" target="_blank" rel="noopener noreferrer">reComputer Jetson 運行 YOLOv5 教學全攻略 3 – 使用 TensorRT 加速推論 – CIRCUS Pi</a></p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="illegal-instruction-core-dumped">Illegal instruction (core dumped)<a href="#illegal-instruction-core-dumped" class="hash-link" aria-label="Illegal instruction (core dumped)的直接链接" title="Illegal instruction (core dumped)的直接链接">​</a></h2><ul><li><a href="https://github.com/ultralytics/yolov5/issues/10981" target="_blank" rel="noopener noreferrer">Illegal Instruction (Core dumped) Jetson Nano · Issue #10981 · ultralytics/yolov5 · GitHub</a></li><li><a href="https://stackoverflow.com/questions/65631801/illegal-instructioncore-dumped-error-on-jetson-nano" target="_blank" rel="noopener noreferrer">python - Illegal instruction(core dumped) error on Jetson Nano - Stack Overflow</a></li><li><a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped/165488" target="_blank" rel="noopener noreferrer">Illegal instruction (core dumped) - Jetson &amp; Embedded Systems / Jetson TX2 - NVIDIA Developer Forums</a></li></ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Windows 卸载 MySQL]]></title>
