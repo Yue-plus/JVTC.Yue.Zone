@@ -4,10 +4,18 @@
         <title>悦域九职 Blog</title>
         <link>https://JVTC.Yue.Zone/blog</link>
         <description>悦域九职 Blog</description>
-        <lastBuildDate>Sun, 11 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[黑苹果]]></title>
+            <link>https://JVTC.Yue.Zone/blog/2023/06/23/Hackintosh</link>
+            <guid>https://JVTC.Yue.Zone/blog/2023/06/23/Hackintosh</guid>
+            <pubDate>Fri, 23 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[- OpenCore Install Guide]]></description>
+            <content:encoded><![CDATA[<ul><li><a href="https://dortania.github.io/OpenCore-Install-Guide/" target="_blank" rel="noopener noreferrer">OpenCore Install Guide</a></li><li><a href="https://oc.skk.moe/" target="_blank" rel="noopener noreferrer">OpenCore 简体中文参考手册</a></li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[关于自然常数 e]]></title>
             <link>https://JVTC.Yue.Zone/blog/2023/06/11/关于自然常数e</link>
