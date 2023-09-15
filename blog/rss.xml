@@ -4,10 +4,21 @@
         <title>悦域九职 Blog</title>
         <link>https://JVTC.Yue.Zone/blog</link>
         <description>悦域九职 Blog</description>
-        <lastBuildDate>Thu, 24 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 15 Sep 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[JetBrains 免费教育许可证]]></title>
+            <link>https://JVTC.Yue.Zone/blog/2023/09/15/freeIDEA/README</link>
+            <guid>https://JVTC.Yue.Zone/blog/2023/09/15/freeIDEA/README</guid>
+            <pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[学信网申请教育部学籍在线验证报告]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="学信网申请教育部学籍在线验证报告">学信网申请教育部学籍在线验证报告<a href="#学信网申请教育部学籍在线验证报告" class="hash-link" aria-label="学信网申请教育部学籍在线验证报告的直接链接" title="学信网申请教育部学籍在线验证报告的直接链接">​</a></h2><p>打开 <a href="https://www.chsi.com.cn/" target="_blank" rel="noopener noreferrer">https://www.chsi.com.cn/</a>，登入后点击 <strong>账号信息</strong>，参考下图操作：</p><p><img loading="lazy" src="/assets/images/chsi-3d7641a5ef88dde87d3b94245ecf79ac.png" width="1283" height="2774" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="免费许可证计划">免费许可证计划<a href="#免费许可证计划" class="hash-link" aria-label="免费许可证计划的直接链接" title="免费许可证计划的直接链接">​</a></h2><p>查看 <a href="https://www.jetbrains.com/zh-cn/community/education/#students" target="_blank" rel="noopener noreferrer">免费许可证计划</a> 的相关限制。</p><p>打开 <a href="https://www.jetbrains.com/shop/eform/students" target="_blank" rel="noopener noreferrer">立即申请 JetBrains 学习产品</a> 填写表单：</p><p>申请方式选择<strong>官方文件</strong>。</p><ul><li>您的学术机构的名称：<strong>九江职业技术学院</strong></li><li>您的学术机构的网站：<a href="https://www.jvtc.jx.cn/" target="_blank" rel="noopener noreferrer">https://www.jvtc.jx.cn/</a></li><li><strong>勾选 √</strong> 我的教育机构提供高等教育并颁发国家认可的文凭</li><li><strong>勾选 √</strong> 我参加的教育课程需要一年或更长时间的全日制学习来完成</li><li>官方文件上传学信网下的 PDF 文件</li><li>添加任何证明您与您的学术机构有附属关系的正式文件（如学生证），
+或提供可以找到此类信息的链接：
+<img loading="lazy" src="/assets/images/copy_chsi_link-d2c16e4703c9c78ea6eb57a7814d206a.png" width="1281" height="466" class="img_ev3q"></li><li>学信网报告在线验证码：<strong>复制 <em>教育部学籍在线验证报告</em> 上的在线验证码</strong></li><li><strong>勾选 √</strong> 我已阅读并接受 JetBrains Account 协议</li><li>点击 <strong>申请免费产品</strong></li></ul><p>提交表单后大概两周内会给申请邮箱发邮件，用申请邮箱注册一个 JetBrains 账号即可。</p><p><img loading="lazy" alt="申请成功" src="/assets/images/done-9d4c17ca42cd02579a76be44ffbf218f.png" width="1271" height="686" class="img_ev3q"></p><p>可以下载 <a href="https://www.jetbrains.com/zh-cn/lp/toolbox/" target="_blank" rel="noopener noreferrer">JetBrains Toolbox</a> 方便管理多个 IDE。</p>]]></content:encoded>
+            <author>Yue_plus@foxmail.com (Yue_plus)</author>
+        </item>
         <item>
             <title><![CDATA[Hyper-V 端口占用问题]]></title>
             <link>https://JVTC.Yue.Zone/blog/2023/08/24/Hyper-V端口占用问题</link>
