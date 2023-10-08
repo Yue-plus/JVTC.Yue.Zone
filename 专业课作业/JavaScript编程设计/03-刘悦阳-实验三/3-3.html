@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验三_3-3 刘悦阳 222050587</title>
+</head>
+<body>
+<h1>计算红白黑球</h1>
+
+<h2>输入</h2>
+<label>红白球共计：<input id="RW" value="25" /></label><br />
+<label>白黑球共计：<input id="WB" value="31" /></label><br />
+<label>红黑球共计：<input id="RB" value="28" /></label><br />
+<button onclick="calculate()" style="width: 300px; height: 80px; font-size: xx-large">计算</button>
+
+<h2>输出</h2>
+<div id="output"></div>
+
+<script>
+    function output(R, W, B) {
+        document.getElementById("output").innerHTML = `
+            红球：${R}<br />
+            白球：${W}<br />
+            黑球：${B}<br />
+        `
+    }
+
+    function calculate() {
+        const RW = Number(document.getElementById("RW").value)
+        const WB = Number(document.getElementById("WB").value)
+        const RB = Number(document.getElementById("RB").value)
+
+        if (isNaN(RW) || isNaN(WB) || isNaN(RB))
+            return alert("输入不是数字")
+        if (!Number.isInteger(RW) || !Number.isInteger(WB) || !Number.isInteger(RB))
+            return alert("输入不能为小数")
+
+        const W = (RW + WB - RB) / 2;
+        const R = RW - W;
+        const B = RB - R;
+
+        if (!Number.isInteger(W) || !Number.isInteger(R) || !Number.isInteger(B) || W < 0 || R < 0 || B < 0)
+            return alert("输入的数据无法分配")
+
+        output(R, W, B)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>软件2201-刘悦阳-222050587</title>
+    <script src="../code.jquery.com_jquery-3.7.1.js"></script>
+</head>
+<body>
+<button>按钮</button>
+<ul>
+    <li>
+        <label>冬奥新闻</label>
+        <ul>
+            <li>闭幕式折柳寄情送别运动员</li>
+            <li>谷爱凌苏翊鸣闭幕式同框</li>
+            <li>谷爱凌领奖全场高唱歌唱祖国</li>
+        </ul>
+    </li>
+    <li>
+        <label>冬奥知识</label>
+        <ul>
+            <li>U型场地技巧的评分规则</li>
+            <li>为何水立方场地三种温度</li>
+            <li>为何北京是首个双奥之城</li>
+        </ul>
+    </li>
+    <li >
+        <label>热门项目</label>
+        <ul>
+            <li>花样滑冰</li>
+            <li>短道速滑</li>
+            <li>冰壶</li>
+            <li>冰球</li>
+        </ul>
+    </li>
+</ul>
+<script>
+    $('button').click(function () {
+        $('label').css({
+            'color': 'red',
+            'font-size': '32px',
+            'font-weight': '900',
+        });
+        const lis = $('label + ul').children('li');
+        lis[1].style.border = '3px solid blue';
+        lis[3].style.border = '3px solid blue';
+        lis[6].style.fontStyle = 'italic';
+        lis[7].style.fontStyle = 'italic';
+        lis[8].style.fontStyle = 'italic';
+        lis[9].style.fontStyle = 'italic';
+    });
+</script>
+</body>
+</html>

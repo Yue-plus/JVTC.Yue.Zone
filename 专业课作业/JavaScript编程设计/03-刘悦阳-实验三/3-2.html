@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验三_3-2 刘悦阳 222050587</title>
+</head>
+<body>
+<h1>加油优惠计算</h1>
+请选择汽油标号：<br />
+<label><input name="rating" type="radio" value="92#" />92# 6 元每升；超过 20 升每升 5.9 元；</label>
+<label><input name="rating" type="radio" value="97#" checked />97# 7 元每升；超过 40 升每升 6.5 元；</label>
+<br />
+<label>请输入加油量（升）：<input id="quantity" placeholder="请输入加油量（升）" /></label>
+<br /><br />
+<!--<button onclick="calculate()" style="width: 300px; height: 80px; font-size: xx-large">计算</button>-->
+<div id="output"></div>
+<script>
+    const QUANTITY_ELEMENT = document.getElementById("quantity");
+    QUANTITY_ELEMENT.addEventListener("input", () => calculate())
+
+    function output(unit_price, quantity, total_price) {
+        document.getElementById("output").innerHTML = `
+            汽油 ${(unit_price).toFixed(3)} 元每升；<br />
+            加油 ${quantity.toFixed(3)} 升；<br />
+            共计 <span style="font-size: xx-large">${(total_price).toFixed(3)}</span> 元；
+        `
+    }
+
+    function calculate() {
+        const RATING_DOM = document.querySelector('input[name="rating"]:checked');
+        if (RATING_DOM === null) return alert("请选择汽油标号");
+        const RATING = RATING_DOM.value;
+
+
+        const QUANTITY_VALUE = Number(document.getElementById("quantity").value);
+        if (isNaN(QUANTITY_VALUE)) return alert("加油量必须为数字");
+
+        if (RATING === '92#') {
+            const UNIT_PRICE = QUANTITY_VALUE >= 20 ? 5.9 : 6;
+            const TOTAL_PRICE = UNIT_PRICE * QUANTITY_VALUE;
+            return output(UNIT_PRICE, QUANTITY_VALUE, TOTAL_PRICE)
+        } else if (RATING === '97#') {
+            const UNIT_PRICE = QUANTITY_VALUE >= 40 ? 6.5 : 7;
+            const TOTAL_PRICE = UNIT_PRICE * QUANTITY_VALUE;
+            return output(UNIT_PRICE, QUANTITY_VALUE, TOTAL_PRICE)
+        }
+    }
+</script>
+</body>
+</html>

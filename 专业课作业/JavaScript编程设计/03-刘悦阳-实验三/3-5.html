@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验三_3-5 刘悦阳 222050587</title>
+</head>
+<body>
+<h1>素数判断</h1>
+<label>
+    请输入一个数字：
+    <textarea id="input" placeholder="请输入一个数字"></textarea>
+    <button onclick="calculate()">判断</button>
+</label>
+<main style="font-size: xx-large"></main>
+<script>
+    const inputElement = document.getElementById("input");
+    const mainElement = document.getElementsByTagName("main")[0];
+    inputElement.addEventListener("input", () => {
+        if (inputElement.value.length > 6) return mainElement.innerHTML = "数字过大，已关闭自动计算。";
+        calculate();
+    });
+
+    function calculate() {
+        mainElement.innerHTML = "正在计算……";
+        mainElement.style.color = "blue";
+        if (isZhiShu(inputElement.value.toString())) {
+            mainElement.innerHTML = "这是一个素数";
+            mainElement.style.color = "green";
+        } else {
+            mainElement.innerHTML = "这不是一个素数";
+            mainElement.style.color = "red";
+        }
+    }
+
+    function isZhiShu(n) {
+        try {
+            n = BigInt(n);
+        } catch (e) {
+            return false;
+        }
+
+        if (n <= 1n) return false;
+        if (n <= 3n) return true;
+        if (n % 2n === 0n || n % 3n === 0n) return false;
+
+        let i = 5n;
+        while (i * i <= n) {
+            if (n % i === 0n || n % (i + 2n) === 0n) {
+                return false;
+            }
+            i += 6n;
+        }
+
+        return true;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>软件2201-刘悦阳-222050587</title>
+	<script src="../code.jquery.com_jquery-3.7.1.js"></script>
+    <style>
+        div {
+            height: 100px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            float: left;
+            margin-right: 10px;
+        }
+
+        #but1 {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="Q1">
+	<p>自创选择器应用 (1)</p>
+    <ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<div id="Q2">
+	<p>自创选择器应用 (2)</p>
+	<ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<div id="Q3">
+	<p>自创选择器应用 (3)</p>
+	<ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<div id="Q4">
+	<p>自创选择器应用 (4)</p>
+	<ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<div id="Q5">
+	<p>自创选择器应用 (5)</p>
+	<ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<div id="Q6">
+	<p>自创选择器应用 (6)</p>
+	<ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<div id="Q7">
+	<p>自创选择器应用 (7)</p>
+	<ul><li></li><li></li><li class="first"></li><li></li><li></li><li class="first"></li><li></li><li></li></ul>
+</div>
+<footer>
+	<script>
+		$("#Q1 li:eq(2)").css({"background-color": "red"});
+		$("#Q2 li:eq(-3)").css({"background-color": "red"});
+		$("#Q3 li:gt(-6)").css({"background-color": "red"});
+		$("#Q4 li:lt(2)").css({"background-color": "red"});
+		$("#Q5 li:odd").css({"background-color": "red"});
+		$("#Q6 li:even").css({"background-color": "red"});
+		$("#Q7 li:not(.first)").css({"background-color": "red"});
+	</script>
+</footer>
+</body>
+</html>

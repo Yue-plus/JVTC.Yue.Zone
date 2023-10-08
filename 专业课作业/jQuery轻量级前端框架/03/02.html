@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>软件2201-刘悦阳-222050587</title>
+    <script src="../code.jquery.com_jquery-3.7.1.js"></script>
+</head>
+<body>
+<table id="employees" width="300" border="1">
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>学历</th>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>张三</td>
+        <td>女</td>
+        <td></td>
+        <td>大专</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>李四</td>
+        <td>男</td>
+        <td>30</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>王五</td>
+        <td></td>
+        <td>25</td>
+        <td>本科</td>
+    </tr>
+</table>
+<script>
+    function setColor1() {
+        $("td:even").css({"background-color": "red"});
+        $("td:odd").css({"background-color": "blue"});
+    }
+
+    function setColor2() {
+        $("td:even").css({"background-color": "green"});
+        $("td:odd").css({"background-color": "yellow"});
+    }
+
+    setColor2();
+    setInterval(() => setColor1(), 3000);
+    setInterval(() => setColor2(), 6000)
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>案例1-1</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        img {
+            display: inline-block;
+            position: fixed;
+            user-select: none;
+        }
+
+        #top {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        #left {
+            top: 0;
+            left: 0;
+        }
+
+        #bottom {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #right {
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<img id="top" src="images/top.jpg" alt="top">
+<img id="left" src="images/left.jpg" alt="top">
+<img id="bottom" src="images/bottom.jpg" alt="top">
+<img id="right" src="images/right.jpg" alt="top">
+</body>
+</html>

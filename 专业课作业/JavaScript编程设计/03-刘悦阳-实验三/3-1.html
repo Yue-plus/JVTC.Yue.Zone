@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验三_3-1 刘悦阳 222050587</title>
+</head>
+<body>
+<h1>人生计算器</h1>
+<label>
+    请输入出生日期：
+    <input id="date" type="datetime-local" />
+</label>
+<!--<button onclick="calculate()">计算</button>-->
+<div id="output"></div>
+<script>
+    const DATE_ELEMENT = document.getElementById("date")
+
+    // 设置输入不可超过当前日期
+    DATE_ELEMENT.max = new Date().toISOString().split("T")[0];
+
+    DATE_ELEMENT.addEventListener("input", () => calculate())
+
+    function calculate() {
+        const date_input_value = document.getElementById("date").value;
+        if (date_input_value === '') return alert("未输入值");
+
+        const date_input = new Date(date_input_value)
+        const date_now = new Date();
+
+        if (date_input > date_now) return alert("请勿输入未来的数值");
+
+        const date_difference = date_now - date_input;
+
+        document.getElementById("output").innerHTML = `
+            您已经活了 ${(date_difference / 31536000000).toFixed(3)} 年；<br>
+            也就是 ${(date_difference / 2592000000).toFixed(3)} 个月；<br>
+            也就是 ${(date_difference / 604800000).toFixed(3)} 个星期；<br>
+            也就是 ${(date_difference / 86400000).toFixed(3)} 天；<br>
+            也就是 ${(date_difference / 3600000).toFixed(3)} 小时；<br>
+            也就是 ${(date_difference / 60000).toFixed(3)} 分钟；<br>
+            也就是 ${(date_difference / 1000).toFixed(3)} 秒；<br>
+        `
+    }
+</script>
+</body>
+</html>

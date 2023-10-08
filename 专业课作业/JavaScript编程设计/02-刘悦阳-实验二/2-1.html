@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验二_2-1</title>
+</head>
+<body>
+<button onclick="changeBgColor('red')">设为红色</button>
+<button onclick="changeBgColor('yellow')">设为黄色</button>
+<button onclick="changeBgColor('blue')">设为蓝色</button>
+<button onclick="changeBgColor(prompt('请输入需要设置的颜色'))">设为自定义颜色</button>
+<footer>
+    <script>
+        function changeBgColor(str) {
+            document.body.style.backgroundColor = str;
+        }
+    </script>
+</footer>
+</body>
+</html>

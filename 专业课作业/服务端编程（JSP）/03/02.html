@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刘悦阳-222050587-03-02</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+
+        td input {
+            width: 96%;
+        }
+
+        td input[type=radio] {
+            width: auto;
+        }
+    </style>
+</head>
+<body style="background-color: lightgray">
+<h1 style="color: red; text-align: center; font-family: 楷体, serif">请填写以下注册信息</h1>
+<form style="max-width: 320px; margin: auto; display: flex; flex-direction: column">
+    <table>
+        <tr>
+            <td><label for="login-name">登入名字</label></td>
+            <td><input id="login-name" name="login-name" type="text" /></td>
+        </tr>
+        <tr>
+            <td><label for="password">用户密码</label></td>
+            <td><input id="password" name="password" type="password" /></td>
+        </tr>
+        <tr>
+            <td><label for="repeat-password">重复密码</label></td>
+            <td><input id="repeat-password" name="repeat-password" type="password" /></td>
+        </tr>
+        <tr>
+            <td><label for="user-name">用户姓名</label></td>
+            <td><input id="user-name" name="user-name" type="text" /></td>
+        </tr>
+        <tr>
+            <td>用户性别</td>
+            <td>
+                <label><input name="sex" type="radio" />男</label>
+                <label><input name="sex" type="radio" />女</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="date">出生日期</label></td>
+            <td><input id="date" name="date" type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="education">用户学历</label></td>
+            <td>
+                <select id="education" name="education">
+                    <option>博士</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="title">职务职称</label></td>
+            <td>
+                <select id="title" name="title" style="width: 50%">
+                    <option>学生</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="user-tel">用户电话</label></td>
+            <td><input id="user-tel" name="user-tel" type="tel" /></td>
+        </tr>
+        <tr>
+            <td><label for="address">家庭住址</label></td>
+            <td>
+                <select id="address" name="address">
+                    <option>江 西</option>
+                </select>
+                <label>省（直辖市）</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">用户电话</label></td>
+            <td><input id="email" name="email" type="email" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit" style="margin-right: 30px">确定</button>
+                <button type="reset">清除</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

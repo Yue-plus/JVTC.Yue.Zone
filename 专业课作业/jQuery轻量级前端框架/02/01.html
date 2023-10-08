@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>软件2201-刘悦阳-222050587</title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            position: absolute;
+        }
+    </style>
+    <script src="../code.jquery.com_jquery-3.7.1.js"></script>
+</head>
+<body>
+    <input type="button" value="运动">
+    <div id="div1"></div>
+    <script>
+        $('input').click(() => $('#div1').animate({left: '300px'}, 2000));
+    </script>
+</body>
+</html>
