@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验四_4-2 刘悦阳 222050587</title>
+</head>
+<body>
+<h1>生成菱形三角形</h1>
+<label>生成 <input id="lines" type="number"/> 行</label>
+<pre id="result" style="font-size: large;"></pre>
+<script>
+    const LINES_ELEMENT = document.getElementById("lines");
+
+    function drawDiamond(n) {
+        let output = "";
+        for (let i = 0; i < n; i++) {
+            let spaces = " ".repeat(n - i - 1);
+            let stars = "*".repeat(2 * i + 1);
+            output += spaces + stars + "\n";
+        }
+        for (let i = n - 2; i >= 0; i--) {
+            let spaces = " ".repeat(n - i - 1);
+            let stars = "*".repeat(2 * i + 1);
+            output += spaces + stars + "\n";
+        }
+        return output;
+    }
+
+    function drawRightTriangle(n) {
+        let output = "";
+        for (let i = 0; i < n; i++) {
+            let stars = "*".repeat(i + 1);
+            output += stars + "\n";
+        }
+        return output;
+    }
+
+    LINES_ELEMENT.addEventListener('input', () => {
+        document.getElementById("result").innerText =
+            drawDiamond(LINES_ELEMENT.value) + drawRightTriangle(LINES_ELEMENT.value);
+    })
+</script>
+</body>
+</html>

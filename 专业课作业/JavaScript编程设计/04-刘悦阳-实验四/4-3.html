@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验四_4-3 刘悦阳 222050587</title>
+</head>
+<body>
+<h1>返回数组中指定值的的下标和出现的次数</h1>
+<label>数组：
+    <textarea id="array" style="width: 90%; height: 200px; vertical-align: top">['a','b','d','d','c','d','d']</textarea>
+</label>
+<br />
+<label>寻找：<input id="find" type="text" value="d" /></label>
+<pre id="result" style="font-size: large;"></pre>
+<script>
+    function findValueIndexAndCount(arr, value) {
+        let indices = [];
+        let count = 0;
+        for(let i = 0; i < arr.length; i++) {
+            if (arr[i] === value) {
+                indices.push(i);
+                count++;
+            }
+        }
+
+        document.getElementById("result").innerHTML = `下标：${indices}；出现次数：${count}`
+    }
+
+    const ARRAY = document.getElementById("array");
+    const FIND = document.getElementById("find");
+    ARRAY.addEventListener("input", () => findValueIndexAndCount(ARRAY.value, FIND.value));
+    FIND.addEventListener("input", () => findValueIndexAndCount(ARRAY.value, FIND.value));
+    findValueIndexAndCount(ARRAY.value, FIND.value)
+</script>
+</body>
+</html>

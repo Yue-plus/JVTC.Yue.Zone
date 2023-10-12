@@ -1,0 +1,94 @@
+<!doctype html>
+<!--suppress ALL -->
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验四_4-1 刘悦阳 222050587</title>
+</head>
+<body>
+<form>
+    <label>语文：<input id="语文" type="number" placeholder="请输入语文成绩。"/></label><br/>
+    <label>数学：<input id="数学" type="number" placeholder="请输入数学成绩。"/></label><br/>
+    <label>英语：<input id="英语" type="number" placeholder="请输入英语成绩。"/></label><br/>
+    <label>化学：<input id="化学" type="number" placeholder="请输入化学成绩。"/></label><br/>
+    <label>历史：<input id="历史" type="number" placeholder="请输入历史成绩。"/></label><br/>
+    <button type="button" onclick="submit()">提交</button>
+</form>
+<main id="main" style="font-size: large">
+
+</main>
+<script>
+    const ELEMENT_语文 = document.getElementById("语文");
+    const ELEMENT_数学 = document.getElementById("数学");
+    const ELEMENT_英语 = document.getElementById("英语");
+    const ELEMENT_化学 = document.getElementById("化学");
+    const ELEMENT_历史 = document.getElementById("历史");
+    ELEMENT_语文.addEventListener("input", () => submit());
+    ELEMENT_数学.addEventListener("input", () => submit());
+    ELEMENT_英语.addEventListener("input", () => submit());
+    ELEMENT_化学.addEventListener("input", () => submit());
+    ELEMENT_历史.addEventListener("input", () => submit());
+
+    function submit() {
+        const ELEMENT_MAIN = document.getElementById("main");
+
+        if (isNaN(ELEMENT_语文.value) || ELEMENT_语文.value === "")
+            return ELEMENT_MAIN.innerHTML = "<span style='color: red;'>语文成绩未输入或格式错误</span>";
+        if (isNaN(ELEMENT_数学.value) || ELEMENT_数学.value === "")
+            return ELEMENT_MAIN.innerHTML = "<span style='color: red;'>数学成绩未输入或格式错误</span>";
+        if (isNaN(ELEMENT_英语.value) || ELEMENT_英语.value === "")
+            return ELEMENT_MAIN.innerHTML = "<span style='color: red;'>英语成绩未输入或格式错误</span>";
+        if (isNaN(ELEMENT_化学.value) || ELEMENT_化学.value === "")
+            return ELEMENT_MAIN.innerHTML = "<span style='color: red;'>化学成绩未输入或格式错误</span>";
+        if (isNaN(ELEMENT_历史.value) || ELEMENT_历史.value === "")
+            return ELEMENT_MAIN.innerHTML = "<span style='color: red;'>历史成绩未输入或格式错误</span>";
+
+        const AVERAGE = (
+            Number(ELEMENT_语文.value) +
+            Number(ELEMENT_数学.value) +
+            Number(ELEMENT_英语.value) +
+            Number(ELEMENT_化学.value) +
+            Number(ELEMENT_历史.value)
+        ) / 5;
+
+        let RANK = "";
+
+        // if (AVERAGE >= 90) {
+        //     RANK = "优秀"
+        // } else if (AVERAGE >= 80) {
+        //     RANK = "良好";
+        // } else if (AVERAGE >= 70) {
+        //     RANK = "一般";
+        // } else if (AVERAGE >= 60) {
+        //     RANK = "较差";
+        // } else {
+        //     RANK = "很差";
+        // }
+
+        switch (true) { // 这个 true 的意义是？
+            case AVERAGE >= 90:
+                RANK = "优秀";
+                break;
+            case AVERAGE >= 80:
+                RANK = "良好";
+                break;
+            case AVERAGE >= 70:
+                RANK = "一般";
+                break;
+            case AVERAGE >= 60:
+                RANK = "较差";
+                break;
+            default:
+                RANK = "很差";
+                break;
+        }
+
+        ELEMENT_MAIN.innerHTML = `平均分为：${AVERAGE}；成绩${RANK}`;
+        // alert(`平均分为：${AVERAGE}；成绩${RANK}`)
+    }
+</script>
+</body>
+</html>
