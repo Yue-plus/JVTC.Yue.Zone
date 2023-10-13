@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <script src="../code.jquery.com_jquery-3.7.1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tab {
+            width: 360px;
+            height: 280px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+        }
+
+        .tab .hd {
+            height: 30px;
+            width: 360px;
+        }
+
+        .tab .hd span {
+            float: left;
+            width: 119px;
+            height: 29px;
+            text-align: center;
+            line-height: 30px;
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tab .hd span.last {
+            width: 120px;
+            border-right: none;
+        }
+
+        .tab .hd span.cur {
+            border-bottom: 1px solid red;
+        }
+
+        .bd {
+            padding-top: 10px;
+        }
+
+        .bd .column {
+            display: none;
+        }
+
+        .bd .cur {
+            display: block;
+        }
+
+        .bd .column img {
+            width: 360px;
+        }
+    </style>
+</head>
+<body>
+<div class="tab" id="myTab1">
+    <div class="hd">
+        <span class="cur">tab0</span>
+        <span>tab1</span>
+        <span class="last">tab2</span>
+    </div>
+    <div class="bd">
+        <div class="column cur">
+            <img src="./img/0.jpg" alt="狐狸"/>
+        </div>
+        <div class="column">
+            <img src="./img/1.jpg" alt="企鹅"/>
+        </div>
+        <div class="column">
+            <img src="./img/2.jpg" alt="狼狗"/>
+        </div>
+    </div>
+</div>
+<script>
+    const TABS = $(".tab .hd span");
+    const COLUMNS = $(".tab .bd .column");
+    TABS.click(function () {
+        TABS.removeClass("cur");
+        COLUMNS.removeClass("cur");
+        $(this).addClass("cur");
+        COLUMNS.eq($(this).index()).addClass("cur");
+    });
+</script>
+</body>
+</html>
