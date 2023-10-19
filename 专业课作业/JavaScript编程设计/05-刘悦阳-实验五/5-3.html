@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验五_5-3 刘悦阳 222050587</title>
+</head>
+<body>
+<main>
+<!--    求字符串数组中每一个字符的长度，返回一个新数组-->
+<!--    <br />-->
+<!--    <label>输入一个数组：<textarea id="array" rows="30" cols="80">["22222", "a" , "", "aaaaa"]</textarea></label>-->
+<!--    <button onclick="calculate()"></button>-->
+    请按 F12 打开控制台。
+</main>
+<script>
+    function calculate(array) {
+        const RESULT = [];
+
+        for (const item of array) RESULT.push(item.length);
+
+        return RESULT;
+    }
+
+    console.log(calculate(["22222", "a" , "", "aaaaa"]));
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验五_5-1 刘悦阳 222050587</title>
+</head>
+<body>
+<main>
+    <label>斐波那契数列第 <input id="n" type="number" value="0" /></label> 项的值为
+    <span id="result">1</span>
+    <br />
+    斐波那契数列：<span id="FibonacciSequence"></span>
+    <br/>
+</main>
+<script>
+    // FibonacciSequence
+    const FS = [1n, 1n];
+
+    document.getElementById("n").addEventListener("input", () => {
+        const N = document.getElementById("n").value;
+
+        if (isNaN(N)) return alert("输入值不是整数");
+
+        if (FS.length <= N) {
+            for (let i = FS.length; i < N; i++) {
+                FS.push(FS.at(-1) + FS.at(-2));
+            }
+        }
+
+        document.getElementById("result").innerText = FS.at(N - 1).toString();
+        document.getElementById("FibonacciSequence").innerText = FS.toString().replaceAll(",", ", ");
+    });
+</script>
+</body>
+</html>

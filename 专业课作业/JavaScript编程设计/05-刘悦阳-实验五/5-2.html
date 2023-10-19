@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实验五_5-2 刘悦阳 222050587</title>
+</head>
+<body>
+<main>
+    <h1>整数计算器</h1>
+    <label>整数 1 <textarea id="n1" style="vertical-align: center;"></textarea></label>
+    <br />
+    <label>整数 2 <textarea id="n2" style="vertical-align: center;"></textarea></label>
+    <br />
+    <button onclick="calculate('+')">相加</button>
+    <button onclick="calculate('-')">相减</button>
+    <button onclick="calculate('*')">相乘</button>
+    <button onclick="calculate('/')">相除</button>
+    <br />
+    结果：<pre id="result"></pre>
+</main>
+<script>
+    function outputResult(result) {
+        document.getElementById("result").innerText = result;
+    }
+
+    function calculate(operate) {
+        const N1 = document.getElementById("n1").value;
+        const N2 = document.getElementById("n2").value;
+
+        switch (operate) {
+            case '+':
+                outputResult(BigInt(N1) + BigInt(N2));
+                break;
+            case '-':
+                outputResult(BigInt(N1) - BigInt(N2));
+                break;
+            case '*':
+                outputResult(BigInt(N1) * BigInt(N2));
+                break;
+            case '/':
+                // JS 没有大小数 Orz
+                outputResult(N1 / N2);
+                break;
+            default:
+                console.error('未知操作！')
+        }
+    }
+</script>
+</body>
+</html>
