@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>软件2201-刘悦阳-222050587</title>
+    <script src="../code.jquery.com_jquery-3.7.1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion {
+            width: 500px;
+            margin: 100px auto;
+            border: 1px solid #333;
+        }
+
+        .accordion ul {
+            list-style: none;
+        }
+
+        .accordion ul li.cur h3 {
+            background-color: #FF5722;
+
+        }
+
+        .accordion ul li h3 {
+            line-height: 40px;
+            background-color: #1565C0;
+            padding: 0 10px;
+            border-bottom: 1px solid #000;
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .accordion ul li .content {
+            padding: 10px;
+            line-height: 150%;
+            font-size: 16px;
+            display: none;
+        }
+
+        .accordion ul li.first .content {
+            display: block;
+        }
+
+        .accordion ul li i {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            background: yellow url(images/icon.png);
+            /*css3的过渡*/
+            transition: all 0.3s ease 0s;
+        }
+
+        .accordion ul li.cur i {
+            /*有cur的时候转90度*/
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+<div class="accordion">
+    <ul>
+        <li class="cur first">
+            <h3>雄安新区在哪里？<i></i></h3>
+            <div class="content">
+                <p>
+                    雄安新区规地处北京、天津、保定腹地，区位优势明显、交通便捷通畅、生态环境优良、资源环境承载能力较强，现有开发程度较低，发展空间充裕，具备高起点高标准开发建设的基本条件。
+                </p>
+            </div>
+        </li>
+        <li>
+            <h3>雄安新区的地形地貌如何？<i></i></h3>
+            <div class="content">
+                <p>
+                    雄安新区位于太行山东麓、冀中平原中部、南拒马河下游南岸，在大清河水系冲积扇上，属太行山麓平原向冲积平原的过渡带。
+                </p>
+            </div>
+        </li>
+        <li>
+            <h3>雄安新区气候特征如何？<i></i></h3>
+            <div class="content">
+                <p>
+                    雄安新区境地处中纬度地带，属暖温带季风型大陆性气候，[3]四季分明，年均气温11.7℃，最高月（月）平均气温26℃，最低月（1月）平均气温—4.9℃；年日照2685小时，年平均降雨量551.5毫米，6至9月份占80%。无霜期185天左右。
+                </p>
+            </div>
+        </li>
+        <li>
+            <h3>党中央对雄安新区发展有何规定？<i></i></h3>
+            <div class="content">
+                <p>
+                    构建科学合理空间布局；塑造新时代城市风貌；打造优美自然生态环境；发展高端高新产业；提供优质共享公共服务；构建快捷高效交通网；建设绿色智慧新城；构筑现代化城市安全体系；保障规划有序有效实施。
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+   const ACCORDION_LI = $(".accordion li")
+   ACCORDION_LI.click(function () {
+       ACCORDION_LI.removeClass("cur").removeClass("first")
+       $(this).addClass("cur").addClass("first")
+    })
+</script>
+</body>
+</html>

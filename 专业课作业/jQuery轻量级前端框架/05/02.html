@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>软件2201-刘悦阳-222050587</title>
+    <script src="../code.jquery.com_jquery-3.7.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .carousel{
+            width:270px;
+            height:481px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .carousel .carousel_images ul{
+            list-style: none;
+        }
+        .carousel .carousel_images ul li{
+            display: none;
+        }
+        .carousel .carousel_images ul li.cur{
+            display: block !important;
+        }
+        .carousel .carousel_images ul li img{
+            width:270px;
+            height:481px;
+        }
+        .carousel .carousel_nav{
+            position: absolute;
+            bottom:0;
+            right:0;
+            width: 123px;
+            height: 24px;
+        }
+        .carousel .carousel_nav ol{
+            list-style: none;
+        }
+        .carousel .carousel_nav ol li{
+            float: left;
+            width:16px;
+            height: 16px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background-color: #eee;
+            opacity: 0.6;
+        }
+        .carousel .carousel_nav ol li.cur{
+            background:darkred;
+        }
+        .carousel .carousel_btns .btn{
+            position: absolute;
+            width:40px;
+            height:40px;
+            border-radius: 20%;
+            background-color: #ffd70085;
+        }
+        .carousel .carousel_btns .btn.left{
+            top:50%;
+            left:0;
+            margin-top: -20px;
+            margin-left: -20px;
+        }
+        .carousel .carousel_btns .btn.right{
+            top:50%;
+            right:0;
+            margin-top: -20px;
+            margin-right: -20px;
+        }
+    </style>
+</head>
+<body>
+<div class="carousel" id="myCarouesl1">
+    <div class="carousel_images">
+        <ul>
+            <li style="display:none;" class="cur">
+                <a href="javascript:;"><img src="./images/0.jpg" alt=""></a>
+            </li>
+            <li style="display:none;">
+                <a href="javascript:;"><img src="./images/1.jpg" alt=""></a>
+            </li>
+            <li style="display:none;">
+                <a href="javascript:;"><img src="./images/2.jpg" alt=""></a>
+            </li>
+            <li style="display:none;">
+                <a href="javascript:;"><img src="./images/3.jpg" alt=""></a>
+            </li>
+            <li style="display:none;">
+                <a href="javascript:;"><img src="./images/4.jpg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <div class="carousel_nav">
+        <ol>
+            <li class="cur"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div class="carousel_btns">
+        <a href="javascript:;" class="btn left"></a>
+        <a href="javascript:;" class="btn right"></a>
+    </div>
+</div>
+<script>
+    const CAROUSEL_NAV = $(".carousel_nav li")
+    const CAROUSEL_IMAGES = $(".carousel_images li")
+    const CAROUSEL_INDEX_MAX = 4
+    let carousel_index = 0
+    let carousel_hover = false
+
+    function carousel_update() {
+        CAROUSEL_NAV.removeClass("cur").eq(carousel_index).addClass("cur")
+        CAROUSEL_IMAGES.removeClass("cur").eq(carousel_index).addClass("cur")
+    }
+
+    function carousel_right() {
+        if (++carousel_index > CAROUSEL_INDEX_MAX) carousel_index = 0
+        carousel_update()
+    }
+
+    function carousel_left() {
+        if (--carousel_index < 0) carousel_index = CAROUSEL_INDEX_MAX
+        carousel_update()
+    }
+
+    setInterval(() => {
+        if (!carousel_hover) carousel_right()
+    }, 2000)
+
+    $(".carousel").hover(function () {
+        carousel_hover = true
+        $(".carousel_btns").show()
+    }, function () {
+        carousel_hover = false
+        $(".carousel_btns").hide()
+    })
+
+    CAROUSEL_NAV.click(function () {
+        carousel_index = $(this).index()
+        carousel_update()
+    })
+
+    $(".carousel_btns .right").click(() => carousel_right())
+    $(".carousel_btns .left").click(() => carousel_left())
+</script>
+</body>
+</html>

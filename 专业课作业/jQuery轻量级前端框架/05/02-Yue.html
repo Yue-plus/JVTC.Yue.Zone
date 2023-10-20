@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>软件2201-刘悦阳-222050587</title>
+    <script src="./Carousel.js"></script>
+</head>
+<body>
+<h1>面向对象的 JavaScript</h1>
+<div id="carousel" style="width: 280px; height: 498px;"></div>
+<script>
+    const IMG = [
+        "./images/0.jpg",
+        "./images/1.jpg",
+        "./images/2.jpg",
+        "./images/3.jpg",
+        "./images/4.jpg",
+    ]
+    const CAROUSEL = new Carousel(document.getElementById("carousel"), IMG, 2000)
+</script>
+</body>
+</html>
