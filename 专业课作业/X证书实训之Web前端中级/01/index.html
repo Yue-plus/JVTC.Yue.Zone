@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01-222050587+刘悦阳</title>
+    <style>
+        body {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        main {
+            background-color: lightgray;
+            display: inline-block;
+            width: 90%;
+            height: 80%;
+            max-width: 800px;
+            min-height: 800px;
+            box-shadow: 8px 8px 5px gray
+        }
+
+        #input {
+            font-size: xx-large;
+            height: 20%;
+            background-color: gray
+        }
+
+        #keyboard {
+            height: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        #keyboard div {
+            padding: 28%;
+            box-sizing: border-box;
+            border-radius: 8%;
+            transition: background-color .2s;
+            user-select: none;
+        }
+
+        #keyboard div:hover {
+            background-color: darkgray;
+        }
+
+        #keyboard div::after {
+            content: attr(data-v);
+        }
+    </style>
+</head>
+<body>
+<h1>项目一 网页计算器</h1>
+<p><sub>222050587 刘悦阳</sub></p>
+<main>
+    <div id="input"></div>
+    <div id="keyboard" style="">
+        <div data-v="9"></div>
+        <div data-v="8"></div>
+        <div data-v="7"></div>
+        <div data-v="*"></div>
+        <div data-v="6"></div>
+        <div data-v="5"></div>
+        <div data-v="4"></div>
+        <div data-v="-"></div>
+        <div data-v="3"></div>
+        <div data-v="2"></div>
+        <div data-v="1"></div>
+        <div data-v="+"></div>
+        <div data-v="0"></div>
+        <div data-v="."></div>
+        <div data-v="C"></div>
+        <div data-v="/"></div>
+        <div data-v="AC"></div>
+        <div style="width: 200%" data-v="="></div>
+    </div>
+</main>
+<footer>
+    <script>
+        let input = ""
+
+        document.getElementById("keyboard").addEventListener("click", e => {
+            const v = e.target.dataset["v"]
+            switch (v) {
+                case "C":
+                    input = input.substring(0, input.length - 1)
+                    break
+                case "AC":
+                    input = ""
+                    break
+                case "9":
+                case "8":
+                case "7":
+                case "6":
+                case "5":
+                case "4":
+                case "3":
+                case "2":
+                case "1":
+                case "0":
+                case "+":
+                case "-":
+                case "*":
+                case "/":
+                case ".":
+                    input += v
+                    break
+                case "=":
+                    input = parseFloat(eval(input).toFixed(16)).toString()
+                    break
+                default:
+                    console.log(v)
+            }
+
+            document.getElementById("input").innerText = input
+        })
+    </script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02-222050587+刘悦阳</title>
+    <style>
+    </style>
+</head>
+<body>
+<h1>项目二 手机号抽奖</h1>
+<p><sub>222050587 刘悦阳</sub></p>
+<main>
+    抽取手机号码：
+    <button onclick="one()">单抽</button>
+    <button onclick="ten()">十连</button>
+    <hr/>
+    <div id="result"></div>
+</main>
+<footer>
+    <script>
+        function genResultElement() {
+            const phone = `1${Math.random().toString().split(".")[1].substring(0, 11)}`
+            return `<pre style="font-size: xxx-large"><a target="_blank" href="tel:${phone}">${phone}</a></pre>`
+        }
+
+        function one() {
+            return document.getElementById("result").innerHTML = genResultElement()
+        }
+
+        function ten() {
+            let dom = ""
+
+            for (let i = 0; i < 10; i++) {
+                dom += genResultElement()
+            }
+
+            return document.getElementById("result").innerHTML = dom
+        }
+    </script>
+</footer>
+</body>
+</html>
