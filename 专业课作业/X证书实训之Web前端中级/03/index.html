@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03-222050587+刘悦阳</title>
+    <style>
+        #result {
+            height: 100px;
+            background-color: lightgray;
+            line-height: 100px;
+            vertical-align: center;
+            font-size: xxx-large;
+            padding: 0 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h1>项目三 项目提成计算器</h1>
+<p><sub>222050587 刘悦阳</sub></p>
+<hr/>
+<main>
+    <h2>项目提成计算器</h2>
+    <div style="font-size: xxx-large">项目提成：
+        <div id="result">0</div>
+    </div>
+    <label><input id="input" type="number" placeholder="盈利"/></label>
+    <label>
+        <select name="roles" id="roles">
+            <option value="programmer">程序员</option>
+            <option value="manager">项目经理</option>
+            <option value="sale">销售人员</option>
+        </select>
+    </label>
+    <button onclick="count()">计算</button>
+</main>
+<footer>
+    <script>
+        function count() {
+            const V = document.getElementById("input").value
+            const ROLES = document.getElementById("roles").value
+            const RESULT = document.getElementById("result")
+
+            switch (ROLES) {
+                case "programmer":
+                    if (V >= 1_0000) RESULT.innerText = String(V * 0.05)
+                    else if (V >= 2000) RESULT.innerText = String(50)
+                    else RESULT.innerText = String(0)
+                    break
+                case "manager":
+                    if (V >= 2_0000) RESULT.innerText = String(V * 0.2)
+                    else RESULT.innerText = String(V * 0.1)
+                    break
+                case "sale":
+                    if (V >= 10_0000) RESULT.innerText = String(V * 0.3)
+                    else if (V >= 2000) RESULT.innerText = String(V * 0.2)
+                    else RESULT.innerText = String(V * 0.05)
+                    break
+            }
+        }
+
+        document.getElementById("input").addEventListener("input", _ => count())
+        document.getElementById("roles").addEventListener("change", _ => count())
+    </script>
+</footer>
+</body>
+</html>

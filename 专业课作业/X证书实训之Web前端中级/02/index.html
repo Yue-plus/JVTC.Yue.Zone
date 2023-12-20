@@ -22,8 +22,20 @@
 <footer>
     <script>
         function genResultElement() {
-            const phone = `1${Math.random().toString().split(".")[1].substring(0, 11)}`
-            return `<pre style="font-size: xxx-large"><a target="_blank" href="tel:${phone}">${phone}</a></pre>`
+            // 移动
+            const CMCC = ["134", "135", "136", "137", "138", "139", "147", "148", "150", "151", "152", "157", "158", "159", "165", "1703", "1705", "1706", "178", "182", "183", "184", "187", "188", "198"]
+            // 联通
+            const UNICOM = ["130", "131", "132", "145", "146", "155", "156", "166", "167", "1704", "1707", "1708", "1709", "175", "176", "185", "186"]
+            // 电信
+            const TELECOM = ["133", "1349", "149", "153", "1700", "1701", "1702", "1740", "173", "177", "180", "181", "189", "191", "199"]
+            // 所有号段（不包括物联网号段）
+            const PREFIX = CMCC.concat(UNICOM, TELECOM)
+            // 随机取一个号段
+            const RANDOM_PREFIX = PREFIX[Math.floor(Math.random() * PREFIX.length)]
+            // 生成手机号码
+            const PHONE = RANDOM_PREFIX + Math.random().toString().split(".")[1].substring(0, 11 - RANDOM_PREFIX.length)
+
+            return `<pre style="font-size: xxx-large"><a target="_blank" href="tel:${PHONE}">${PHONE}</a></pre>`
         }
 
         function one() {
