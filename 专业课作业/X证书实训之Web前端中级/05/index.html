@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-222050587+刘悦阳</title>
+    <style>
+        aside ul li {
+            width: 96px;
+            border: lightgray solid 1px;
+            border-radius: 4px;
+        }
+
+        .post {
+            min-width: 300px;
+            min-height:  120px;
+            border: black solid 4px;
+            padding: 8px;
+            font-size: x-large;
+        }
+
+        .post:nth-child(1) {
+            border: lightgray solid 1px;
+            border-radius: 16px;
+        }
+
+        .post:nth-last-child(1) {
+            background-color: rgb(255,153,153);
+            border: lightgray solid 1px;
+            border-radius: 16px;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+        }
+
+        .content::before { content: "✈"}
+        .like::before { content: url("/icons/like.svg")}
+        .forward::before { content: url("/icons/forward.svg"); }
+        .comment::before { content: url("/icons/comment.svg"); }
+        .date, .like, .forward, .comment { font-weight: bolder; }
+    </style>
+</head>
+<body>
+<nav>
+    <label><input type="text"></label>
+    <button type="button">搜索</button>
+</nav>
+<div style="display: flex; align-items: flex-start">
+    <aside style="border: black solid 4px; border-radius: 16px; margin: 16px; vertical-align: top">
+        <ul style="margin: 16px;">
+            <li><a href="#">热门</a></li>
+            <li><a href="#">头条</a></li>
+            <li><a href="#">新鲜事</a></li>
+        </ul>
+    </aside>
+    <main style="margin: 16px 8px; flex: 2">
+        <div class="post">
+            <div class="content">杨老师，生日快乐！</div>
+            <div class="info">
+                <img class="avatar" src="/contributors/Yue_plus.png" alt="avatar" />
+                <span class="username">Yue_plus</span>
+                <span class="date">6月3日</span>
+                <span class="like">29468</span>
+                <span class="forward">78452</span>
+                <span class="comment">67777</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="content">你好 20119 今天是充满童真的一天</div>
+            <div class="info">
+                <img class="avatar" src="/contributors/Yue_plus.png" alt="avatar" />
+                <span class="username">Yue_plus</span>
+                <span class="date">6月3日</span>
+                <span class="like">29468</span>
+                <span class="forward">78452</span>
+                <span class="comment">67777</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="content">祝愿即将高考的学子们考出自己理想的成绩~</div>
+            <div class="info">
+                <img class="avatar" src="/contributors/Yue_plus.png" alt="avatar" />
+                <span class="username">Yue_plus</span>
+                <span class="date">6月3日</span>
+                <span class="like">29468</span>
+                <span class="forward">78452</span>
+                <span class="comment">67777</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="content">偷偷藏起来，喜欢被同学取笑。</div>
+            <div class="info">
+                <img class="avatar" src="/contributors/Yue_plus.png" alt="avatar" />
+                <span class="username">Yue_plus</span>
+                <span class="date">6月3日</span>
+                <span class="like">29468</span>
+                <span class="forward">78452</span>
+                <span class="comment">67777</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="content">周一放送————这位顾客您好，今天想来买点什么? 要不要看本季度最新到货的~</div>
+            <div class="info">
+                <img class="avatar" src="/contributors/Yue_plus.png" alt="avatar" />
+                <span class="username">Yue_plus</span>
+                <span class="date">6月3日</span>
+                <span class="like">29468</span>
+                <span class="forward">78452</span>
+                <span class="comment">67777</span>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
