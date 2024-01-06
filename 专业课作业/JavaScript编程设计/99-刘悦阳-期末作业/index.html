@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末作业 刘悦阳 222050587</title>
+</head>
+<body>
+<script>
+    class ShopCart {
+        constructor() {
+            document.body.innerHTML = `
+<main style="max-width: 800px; margin: 0 auto; border: 1px solid lightblue; padding: 8px;">
+    <h3 style="margin: 0">我的购物车</h3>
+    <hr style="border: solid skyblue 1px"/>
+    <table style="width: 100%">
+        <thead>
+        <tr style="text-align: center">
+            <td>
+            <a id="selectAll" href="#">全选</a><br />
+            <a id="selectNone" href="#">全不选</a>
+            </td>
+            <td>商品</td>
+            <td>单价</td>
+            <td>数量</td>
+            <td>小计</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody id="shop-cart-tbody"></tbody>
+    </table>
+    <div style="text-align: end">
+        已选择 <span id="shop-cart-total">X</span> 件商品，
+        总计 <span id="shop-cart-total-price" style="color: red;">0.00</span>
+        <button type="button" onclick="alert('付款成功！')">提交订单</button>
+    </div>
+</main>
+<hr />
+<form style="max-width: 320px; margin: 0 auto; border: 1px solid lightblue; padding: 8px; text-align: center;">
+    <label>商品名称：<input id="addName" type="text" /></label><br />
+    <label>商品单价：<input id="addPrice" type="number" /></label><br />
+    <label>商品数量：<input id="addCount" type="number" min="0" /></label>
+    <hr />
+    <button type="reset">重置</button>
+    <button id="add" type="button">添加商品</button>
+</form>
+`
+            document.addEventListener("click", () => this.update())
+            document.getElementById("selectAll").addEventListener("click", () =>
+                document.querySelectorAll('.check').forEach(e => e.checked = true))
+            document.getElementById("selectNone").addEventListener("click", () =>
+                document.querySelectorAll('.check').forEach(e => e.checked = false))
+            document.getElementById("add").addEventListener("click", () => {
+                const name = document.getElementById("addName").value
+                const price = document.getElementById("addPrice").value
+                const count = document.getElementById("addCount").value
+                if (name && price && count) this.add(name, price, count)
+            })
+        }
+
+        /**
+         * 向购物车添加一个物品
+         *
+         * @param name 物品名称
+         * @param price 物品单价
+         * @param count 物品数量
+         */
+        add(name, price, count) {
+            document.getElementById("shop-cart-tbody").innerHTML += `
+<tr style="border-bottom: red solid 3px">
+    <td><label><input class="check" type="checkbox" checked /></label></td>
+    <td><a class="name" href="#">${name}</a></td>
+    <td class="price">${price}</td>
+    <td><label><input class="count" type="number" min="0" style="width: 38px" value="${count}"/></label></td>
+    <td><span class="total-price" style="color: red; font-weight: bold;">${price * count}</span></td>
+    <td><button type="button" onclick="this.parentNode.parentNode.remove()">删除</button></td>
+</tr>
+`
+            document.getElementById("shop-cart-tbody").querySelectorAll(".count").forEach(e =>
+                e.addEventListener("input", this.update))
+            this.update()
+        }
+
+        update() {
+            let price = .0, total = .0
+
+            document.getElementById("shop-cart-tbody").querySelectorAll('tr').forEach(e => {
+                let totalPrice = e.querySelector(".price").innerText * parseInt(e.querySelector(".count").value)
+                e.querySelector(".total-price").innerText = totalPrice.toFixed(2).toString()
+
+                if (e.querySelector(".check").checked) {
+                    price += totalPrice
+                    total++
+                }
+            })
+
+            document.getElementById("shop-cart-total").innerText = total.toString()
+            document.getElementById("shop-cart-total-price").innerText = price.toFixed(2).toString()
+        }
+    }
+
+    const SHOP_CART = new ShopCart()
+    SHOP_CART.add("JavaScript实战", 45.80, 1)
+    SHOP_CART.add("PHP基础案例教程", 49.80, 2)
+    SHOP_CART.add("HTML+CSS网页制作", 45.20, 5)
+    SHOP_CART.add("Java基础入门", 45.00, 8)
+</script>
+</body>
+</html>
