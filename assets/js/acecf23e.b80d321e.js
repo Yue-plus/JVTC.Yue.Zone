@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjvtc_yue_zone=self.webpackChunkjvtc_yue_zone||[]).push([[7393],{81838:e=>{e.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog"}')}}]);
