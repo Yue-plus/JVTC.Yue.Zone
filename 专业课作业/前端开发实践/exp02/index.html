@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXP02 - 软件2201 刘悦阳 222050587</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="raffle">
+    <h1>抽奖列表</h1>
+    <ul id="list">
+        <li class="luck">18812317785</li>
+        <li>15366543321</li>
+        <li>13966521231</li>
+        <li>15475641541</li>
+        <li>15363321654</li>
+        <li>13961231652</li>
+        <li>15471541564</li>
+        <li>15415447561</li>
+        <li>15216536334</li>
+        <li>13316596122</li>
+    </ul>
+    <button onclick="raffle()">开始抽奖</button>
+    <button onclick="delLastTel()">删除最后一个号码</button>
+</div>
+<div id="add">
+    <h1>添加号码</h1>
+    <label>
+        <input id="telInput" type="tel"/>
+    </label>
+    <button type="button" onclick="addTel()">添加号码</button>
+</div>
+</body>
+</html>
