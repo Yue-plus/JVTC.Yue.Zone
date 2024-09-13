@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjvtc_yue_zone=self.webpackChunkjvtc_yue_zone||[]).push([[8947],{56600:e=>{e.exports=JSON.parse('{"authors":[{"name":"Yue_plus","title":"\u60a6\u57df\u7ba1\u7406\u5458","url":"https://github.com/Yue-plus","email":"Yue_plus@foxmail.com","imageURL":"/contributors/Yue_plus.png","key":"Yue_plus","page":null,"count":5}]}')}}]);
