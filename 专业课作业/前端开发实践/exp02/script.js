@@ -1,1 +1,24 @@
-function raffle(){const l=$("#list li");let t=setInterval((()=>{l.removeClass("luck"),l[Math.floor(Math.random()*l.length)].classList.add("luck")}),100);setTimeout((()=>clearInterval(t)),3e3)}function delLastTel(){$("#list li:last-child").remove()}function addTel(){const l=$("#telInput");/^1[3-9]\d{9}$/.test(l[0].value)?($("#list").append(`<li>${l[0].value}</li>`),l[0].value=""):alert("\u8f93\u5165\u7684\u53f7\u7801\u4e0d\u89c4\u8303\uff01")}
+function raffle() {
+    const LIST = $("#list li")
+
+    let interval = setInterval(() => {
+        LIST.removeClass("luck");
+        LIST[Math.floor(Math.random() * LIST.length)].classList.add("luck");
+    }, 100)
+
+    setTimeout(() => clearInterval(interval), 3000)
+}
+
+function delLastTel() {
+    $("#list li:last-child").remove()
+}
+
+function addTel() {
+    const TEL_INPUT = $("#telInput")
+    if (/^1[3-9]\d{9}$/.test(TEL_INPUT[0].value)) {
+        $("#list").append(`<li>${TEL_INPUT[0].value}</li>`)
+        TEL_INPUT[0].value = ""
+    } else {
+        alert("输入的号码不规范！")
+    }
+}

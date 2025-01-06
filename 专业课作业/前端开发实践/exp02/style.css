@@ -1,1 +1,33 @@
-body,html{height:100%}body{align-items:stretch;display:flex;margin:0}#list{margin:0;padding:16px 0}#list .luck{background-color:#8b0000;color:#fff;display:inline-block;font-size:xx-large;margin:8px;padding:8px}#add,#raffle{flex:1;text-align:center}#add{background-color:#a9a9a9}
+html, body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+#list {
+    margin: 0;
+    padding: 16px 0;
+}
+
+#list .luck {
+    color: white;
+    background-color: darkred;
+    font-size: xx-large;
+    padding: 8px;
+    margin: 8px;
+    display: inline-block;
+}
+
+#raffle, #add {
+    flex: 1;
+    text-align: center;
+}
+
+#add {
+    background-color: darkgray;
+}

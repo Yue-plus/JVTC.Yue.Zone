@@ -1,1 +1,71 @@
-#grass,#player,.cloud,.mountain,footer{position:fixed}body{background-color:#64bfff;margin:0}footer{background-image:url(images/ground.png);bottom:0;height:130px}#grass,footer{left:0;right:0}#grass{background-image:url(images/grass.png);bottom:80px;height:50px}.cloud{background-image:url(images/cloud.png);height:120px;width:180px}#cloud1{left:45%;top:10%}#cloud2{left:70%;top:20%}#cloud3{left:15%;top:30%}.mountain{background-image:url(images/mountain.png);bottom:130px;height:400px;width:800px}#mountain1{left:10%}#mountain2{left:60%}#player{background-image:url(images/robby-slides.png);background-repeat:no-repeat;bottom:100px;height:200px;left:48%;width:200px}
+
+body {
+    margin: 0;
+    background-color: #64bfff;
+}
+
+footer {
+    height: 130px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/ground.png");
+}
+
+#grass {
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background-image: url("./images/grass.png");
+}
+
+.cloud {
+    width: 180px;
+    height: 120px;
+    position: fixed;
+    background-image: url("./images/cloud.png");
+}
+
+#cloud1 {
+    top: 10%;
+    left: 45%;
+}
+
+#cloud2 {
+    top: 20%;
+    left: 70%;
+}
+
+#cloud3 {
+    top: 30%;
+    left: 15%;
+}
+
+.mountain {
+    width: 800px;
+    height: 400px;
+    position: fixed;
+    bottom: 130px;
+    background-image: url("./images/mountain.png");
+}
+
+#mountain1 {
+    left: 10%;
+}
+
+#mountain2 {
+    left: 60%;
+}
+
+#player {
+    width: 200px;
+    height: 200px;
+    background-image: url("./images/robby-slides.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 100px;
+    left: 48%;
+}
