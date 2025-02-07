@@ -3,7 +3,7 @@
 ## 关于本项目
 
 [Yue_plus](https://github.com/Yue-plus) 正在
-[九江职业技术学院](https://www.jvtc.jx.cn/) |
+[江西职业技术大学](https://www.jvtc.jx.cn/) |
 [信息工程学院](https://xxgcxy.jvtc.jx.cn/) 就读。
 
 本站点用于展示作品、作业、笔记，欢迎同学们共同参与~
