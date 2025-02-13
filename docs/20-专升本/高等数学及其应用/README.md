@@ -11,6 +11,7 @@ title: 高等数学及其应用
 ## 参考资料
 
 - [《微积分》《高等数学》全程教学视频--宋浩老师](https://www.bilibili.com/video/BV1UW411k7Jv/)
+- [我在B站上大学!【完整版-麻省理工-微积分重点】全18讲！学数学不看的微积分课程，看完顺滑一整年。_人工智能数学基础/机器学习/微积分/麻省理工/高等数学_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rY4y1P7er/)
 - [GeoGebra](https://www.geogebra.org/)
 - [$\KaTeX$](https://katex.org/docs/supported.html)
 - [MathNote](https://math.note.yue.zone/)
