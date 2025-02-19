@@ -142,6 +142,7 @@ export function DevelopSoftwareBlockChainsIndex() {
             href: "/docs/开发/软件/区块链/Solidity/"
         },
         {icon: "Ethereum.svg", title: "以太坊", text: "创新应用程序和区块链网络的首要平台", href: "/docs/开发/软件/区块链/以太坊/"},
+        {icon: "Solana.svg", title: "Solana", text: "为大规模应用而构建的高性能区块链", href: "/docs/开发/软件/区块链/Solana/"},
         {icon: "WeBank.png", title: "WeBASE", text: "微众银行区块链应用软件扩展", href: "/docs/开发/软件/区块链/WeBASE/"},
         {icon: "FISCO_BCOS.png", title: "FISCO BCOS", text: "稳定、高效、安全的区块链底层平台", href: "/docs/开发/软件/区块链/FiscoBcos/"},
     ])
