@@ -1,29 +1,19 @@
 {
+    "name": "悦域江职 - JVTC.Yue.Zone",
     "short_name": "悦域江职",
-    "name": "JVTC.Yue.Zone",
-    "icons": [
-      {
-        "src": "/img/班徽.svg",
-        "type": "image/svg+xml",
-        "sizes": "512x512"
-      },
-      {
-        "src": "/images/icons-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "/images/icons-512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "description": "本站点用于展示作品、作业、笔记，欢迎同学们共同参与~",
+    "theme_color": "#0040BF",
     "background_color": "#0040BF",
     "display": "standalone",
-    "scope": "/",
-    "theme_color": "#0040BF",
+    "scope": "./",
+    "start_url": "./?source=pwa",
+    "related_applications": [{ "platform": "webapp", "url": "https://docusaurus.io/manifest.json" }],
+    "icons": [
+      { "src": "/img/班徽.svg", "sizes": "512x512", "type": "image/svg+xml" },
+      { "src": "/images/icons-192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "/images/icons-512.png", "sizes": "512x512", "type": "image/png" }
+    ],
+    "id": "/?source=pwa",
     "shortcuts": [
       {
         "name": "How's weather today?",
@@ -40,7 +30,6 @@
         "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
       }
     ],
-    "description": "本站点用于展示作品、作业、笔记，欢迎同学们共同参与~",
     "screenshots": [
       {
         "src": "/images/screenshot1.png",
