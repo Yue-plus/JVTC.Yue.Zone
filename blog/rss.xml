@@ -4,10 +4,24 @@
         <title>悦域江职 Blog</title>
         <link>https://JVTC.Yue.Zone/blog</link>
         <description>悦域江职 Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Apr 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[各大服务商域名价格表]]></title>
+            <link>https://JVTC.Yue.Zone/blog/2025/04/10/各大服务商域名价格表</link>
+            <guid>https://JVTC.Yue.Zone/blog/2025/04/10/各大服务商域名价格表</guid>
+            <pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[- 阿里云 - 域名价格总览]]></description>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://wanwang.aliyun.com/help/price.html" target="_blank" rel="noopener noreferrer">阿里云 - 域名价格总览</a></li>
+<li><a href="https://buy.cloud.tencent.com/domain/price" target="_blank" rel="noopener noreferrer">腾讯云 - 域名价格总览</a></li>
+<li><a href="https://www.huaweicloud.com/pricing/calculator.html#/domains" target="_blank" rel="noopener noreferrer">华为云 - 域名注册服务价格详情</a></li>
+<li><a href="https://www.xinnet.com/domain/price.html" target="_blank" rel="noopener noreferrer">新网 - 域名价格总览</a></li>
+<li><a href="https://www.juming.com/price.htm" target="_blank" rel="noopener noreferrer">聚名网 - 域名价格总览</a></li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[程序员拜年梗文]]></title>
             <link>https://JVTC.Yue.Zone/blog/2025/01/29/程序员拜年梗文</link>

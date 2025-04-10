@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://JVTC.Yue.Zone/blog</id>
     <title>悦域江职 Blog</title>
-    <updated>2025-01-29T00:00:00.000Z</updated>
+    <updated>2025-04-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://JVTC.Yue.Zone/blog"/>
     <subtitle>悦域江职 Blog</subtitle>
     <icon>https://JVTC.Yue.Zone/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[各大服务商域名价格表]]></title>
+        <id>https://JVTC.Yue.Zone/blog/2025/04/10/各大服务商域名价格表</id>
+        <link href="https://JVTC.Yue.Zone/blog/2025/04/10/各大服务商域名价格表"/>
+        <updated>2025-04-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- 阿里云 - 域名价格总览]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://wanwang.aliyun.com/help/price.html" target="_blank" rel="noopener noreferrer">阿里云 - 域名价格总览</a></li>
+<li><a href="https://buy.cloud.tencent.com/domain/price" target="_blank" rel="noopener noreferrer">腾讯云 - 域名价格总览</a></li>
+<li><a href="https://www.huaweicloud.com/pricing/calculator.html#/domains" target="_blank" rel="noopener noreferrer">华为云 - 域名注册服务价格详情</a></li>
+<li><a href="https://www.xinnet.com/domain/price.html" target="_blank" rel="noopener noreferrer">新网 - 域名价格总览</a></li>
+<li><a href="https://www.juming.com/price.htm" target="_blank" rel="noopener noreferrer">聚名网 - 域名价格总览</a></li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[程序员拜年梗文]]></title>
         <id>https://JVTC.Yue.Zone/blog/2025/01/29/程序员拜年梗文</id>
