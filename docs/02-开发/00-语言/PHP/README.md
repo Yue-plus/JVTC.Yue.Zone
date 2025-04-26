@@ -14,6 +14,7 @@ Composer 是 PHP 的依赖管理器。
 
 [官方网站](https://getcomposer.org/)
 | [Packagist 查找包](https://packagist.org/)
+| [阿里云 Composer 全量镜像](https://developer.aliyun.com/composer)
 
 ## 框架
 
@@ -26,8 +27,8 @@ Composer 是 PHP 的依赖管理器。
 ### Yii
 
 - [Yii PHP Framework](https://www.yiiframework.com/)
+- [Yii 2.0 权威指南](https://www.yiiframework.com/doc/guide/2.0/zh-cn)
 
 ### ThinkPHP
 
 - [官方网站](https://www.thinkphp.cn/)
-- [Yii 2.0 权威指南](https://www.yiiframework.com/doc/guide/2.0/zh-cn)
