@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjvtc_yue_zone=self.webpackChunkjvtc_yue_zone||[]).push([[2498],{92498:(e,c,t)=>{t.d(c,{createArchitectureServices:()=>u.S});var u=t(73009);t(58198)}}]);
